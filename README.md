@@ -45,8 +45,8 @@ Once you have created a repository from this template and the `Template cleanup`
 Note that it is easiest to push to a repository if you set up SSH with Github, please see the [related documentation](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh). SSH is required for pushing to a Github repository when using two-factor authentication.
 
 ```sh
-git clone git@github.com:hwspec/gwproj-template.git
-cd gwproj-template
+git clone git@github.com:hwspec/gwproj-example.git
+cd gwproj-example
 ```
 
 #### Set project organization and name in build.sbt
@@ -68,7 +68,7 @@ For more information about a license, check out the [Github Docs](https://docs.g
 
 #### Commit your changes
 ```sh
-git commit -m 'Starting gwproj-template'
+git commit -m 'Starting gwproj-example'
 git push origin main
 ```
 
@@ -83,7 +83,7 @@ sbt test
 
 Alternatively, if you use Mill:
 ```sh
-./mill gwproj-template.test
+./mill gwproj-example.test
 ```
 
 You should see a whole bunch of output that ends with something like the following lines

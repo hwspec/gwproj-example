@@ -8,7 +8,7 @@ val chiselVersion = "7.7.0"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "gwproj-template",
+    name := "gwproj-example",
 
     resolvers += "central-snapshots" at "https://central.sonatype.com/repository/maven-snapshots/",
 
