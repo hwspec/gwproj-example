@@ -2,7 +2,7 @@
 # gwscript-generated settings for Makefile.gw
 #
 HWMODULENAME=AxiGCD
-BRIDGEBN=target_bridge
+BRIDGEBN=gcd_bridge
 TOPNAME=wrapper
 SRCDIR = $(abspath ../generated/$(HWMODULENAME))
 
