@@ -12,7 +12,7 @@ import mill.scalalib._
 
 object `gwproj-example` extends SbtModule {
   def scalaVersion = "2.13.18"
-  def chiselVersion = "7.7.0"
+  def chiselVersion = "7.13.0"
 
   def moduleDir = super.moduleDir / os.up
 
@@ -23,8 +23,12 @@ object `gwproj-example` extends SbtModule {
     "-Xcheckinit",
     "-Ymacro-annotations",
   )
+  override def repositories = Task {
+    super.repositories() ++ Seq("https://central.sonatype.com/repository/maven-snapshots/")
+  }
   override def mvnDeps = Seq(
     mvn"org.chipsalliance::chisel:$chiselVersion",
+    mvn"io.github.hwspec::garageworks:0.4.0-SNAPSHOT",
   )
   override def scalacPluginMvnDeps = Seq(
     mvn"org.chipsalliance:::chisel-plugin:$chiselVersion",
