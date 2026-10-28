@@ -1,0 +1,3 @@
+chiseltop=axigcd.AxiGCD
+testdir=gwtests
+tests=base

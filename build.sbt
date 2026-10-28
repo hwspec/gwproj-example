@@ -9,7 +9,11 @@ val chiselVersion = "7.7.0"
 lazy val root = (project in file("."))
   .settings(
     name := "gwproj-template",
+
+    resolvers += "central-snapshots" at "https://central.sonatype.com/repository/maven-snapshots/",
+
     libraryDependencies ++= Seq(
+      "io.github.hwspec" %% "garageworks" % "0.4.0-SNAPSHOT",
       "org.chipsalliance" %% "chisel" % chiselVersion,
       "org.scalatest" %% "scalatest" % "3.2.19" % "test",
     ),
